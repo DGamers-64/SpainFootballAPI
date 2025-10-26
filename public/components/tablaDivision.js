@@ -1,5 +1,9 @@
 export default function tablaDivision(data) {
     let elemento = `
+    <div id="info">
+        <img src="${data.division.urlLogo}">
+        <h2>${data.division.nombre}</h2>
+    </div>
     <table>
         <thead>
             <tr>
@@ -17,11 +21,11 @@ export default function tablaDivision(data) {
         </thead>
         <tbody>`
 
-    data.forEach(e => {
+    data.clasificacion.forEach(e => {
         elemento += `
         <tr>
             <td class="td-30">${e.posicion}</td>
-            <td><div class="td-flex"><img src="${e.urlEscudo}">${e.nombre}</div></td>
+            <td data-temporada="${data.division.temporada}" data-division="${data.division.nombre}" data-equipo="${e.nombre}"><div class="td-flex"><img src="${e.urlEscudo}">${e.nombre}</div></td>
             <td class="td-30">${e.pts}</td>
             <td class="td-30">${e.pj}</td>
             <td class="td-30">${e.pg}</td>

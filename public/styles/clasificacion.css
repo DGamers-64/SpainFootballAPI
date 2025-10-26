@@ -1,0 +1,68 @@
+.division {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.division #info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.division #info img {
+    height: 50px;
+    display: inline-block;
+}
+
+.division table, .division td, .division th {
+    border: 1px solid black;
+}
+
+.division table {
+    border-collapse: collapse;
+}
+
+.division th {
+    background-color: black;
+    color: white;
+}
+
+.division tbody > tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.division tbody > tr:nth-child(odd) {
+    background-color: white;
+}
+
+.division td {
+    height: 36px;
+    width: 300px;
+    padding: .2rem;
+    text-align: center;
+}
+
+
+.division .td-flex {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.division tr td:nth-child(2) {
+    cursor: pointer;
+}
+
+.division tr td:nth-child(2) img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.division .td-30 {
+    width: 30px;
+}

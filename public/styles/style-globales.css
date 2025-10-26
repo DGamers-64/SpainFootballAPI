@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    background-color: brown;
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+aside {
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    width: 300px;
+    flex: 0 1 auto;
+    padding: 1rem;
+    display: flex;
+    gap: .6rem;
+    flex-direction: column;
+}
+
+aside > * {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+#contenido {
+    flex: 1 1 auto;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem;
+}

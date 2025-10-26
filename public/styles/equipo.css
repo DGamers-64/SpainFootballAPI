@@ -1,0 +1,64 @@
+.equipo {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "escudo info"
+    "competiciones competiciones";
+}
+
+.equipo > * {
+    padding: 2rem;
+}
+
+.equipo #escudo {
+    border: 1px solid black;
+    grid-area: escudo;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.equipo #escudo img {
+    width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.equipo #info {
+    grid-area: info;
+}
+
+.equipo #competiciones {
+    grid-area: competiciones;
+}
+
+.equipo #competiciones table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.equipo #competiciones td {
+    padding: .4rem;
+    cursor: pointer;
+}
+
+.equipo #competiciones th {
+    padding: .4rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.equipo tbody > tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.equipo tbody > tr:nth-child(odd) {
+    background-color: white;
+}

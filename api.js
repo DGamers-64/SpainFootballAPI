@@ -12,6 +12,7 @@ app.use("/api/v1", apiv1Router)
 app.listen(PORT, () => {
     const log = [
         `-----------------------------------------------`,
+        `               SpainFootballAPI`,
         `Servidor levantado en http://localhost:${PORT}`,
         `-----------------------------------------------`
     ].join("\n")
