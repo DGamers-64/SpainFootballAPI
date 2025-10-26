@@ -1,0 +1,29 @@
+{
+  "name": "spainfootballapi",
+  "version": "0.0.0",
+  "description": "API for spanish football with full coverage",
+  "keywords": [
+    "football",
+    "api",
+    "spain",
+    "full-coverage"
+  ],
+  "homepage": "https://github.com/DGamers-64/SpainFootballAPI#readme",
+  "bugs": {
+    "url": "https://github.com/DGamers-64/SpainFootballAPI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DGamers-64/SpainFootballAPI.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "xLune64",
+  "type": "module",
+  "main": "api.js",
+  "scripts": {
+    "test": "node --watch --env-file=.env api.js"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}
