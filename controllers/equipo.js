@@ -6,6 +6,13 @@ export default class EquiposController {
         res.send(equipos)
     }
 
+    static async devolverEquiposTemporada(req, res) {
+        const { temporada } = req.params
+        const equiposBD = await EquiposModel.devolverEquipos()
+
+        res.send(equiposBD.filter(e => e.temporada == temporada))
+    }
+
     static async devolverEquipo(req, res) {
         const { equipo, temporada } = req.params
         const equiposBD = await EquiposModel.devolverEquipos()

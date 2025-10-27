@@ -8,28 +8,24 @@
     "competiciones competiciones";
 }
 
-.equipo > * {
-    padding: 2rem;
-}
-
 .equipo #escudo {
-    border: 1px solid black;
     grid-area: escudo;
     width: 250px;
     height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
 }
 
 .equipo #escudo img {
     width: 200px;
     max-width: 200px;
     max-height: 200px;
+    object-fit: contain;
 }
 
 .equipo #info {
+    padding-top: 1rem;
     grid-area: info;
 }
 
@@ -40,12 +36,13 @@
 .equipo #competiciones table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 100%;
+    width: max-content;
 }
 
 .equipo #competiciones td {
     padding: .4rem;
     cursor: pointer;
+    border: 1px solid black;
 }
 
 .equipo #competiciones th {

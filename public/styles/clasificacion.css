@@ -1,13 +1,19 @@
 .division {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-template-areas: 
+    "info info"
+    "clasificacion cruzada";
+    grid-template-columns: max-content;
+    grid-template-rows: max-content max-content;
+    gap: 2rem;
 }
 
 .division #info {
+    grid-area: info;
+    height: max-content;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .division #info img {
@@ -15,28 +21,32 @@
     display: inline-block;
 }
 
-.division table, .division td, .division th {
+.division .clasificacion-table td, .division .clasificacion-table th {
     border: 1px solid black;
 }
 
-.division table {
+.division .clasificacion-table {
+    grid-area: clasificacion;
+    height: max-content;
+    border: 1px solid black;
     border-collapse: collapse;
+    width: max-content;
 }
 
-.division th {
+.division .clasificacion-table th {
     background-color: black;
     color: white;
 }
 
-.division tbody > tr:nth-child(even) {
+.division .clasificacion-table tbody > tr:nth-child(even) {
     background-color: lightgray;
 }
 
-.division tbody > tr:nth-child(odd) {
+.division .clasificacion-table tbody > tr:nth-child(odd) {
     background-color: white;
 }
 
-.division td {
+.division .clasificacion-table td {
     height: 36px;
     width: 300px;
     padding: .2rem;
@@ -44,18 +54,18 @@
 }
 
 
-.division .td-flex {
+.division .clasificacion-table .td-flex {
     text-align: left;
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 
-.division tr td:nth-child(2) {
+.division .clasificacion-table tr td:nth-child(2) {
     cursor: pointer;
 }
 
-.division tr td:nth-child(2) img {
+.division .clasificacion-table tr td:nth-child(2) img {
     height: 32px;
     width: 32px;
     object-fit: contain;
@@ -63,6 +73,51 @@
     overflow: hidden;
 }
 
-.division .td-30 {
+.division .clasificacion-table .td-30 {
     width: 30px;
+}
+
+.division .clasificacion-table tr.ascenso {
+    background-color: green !important;
+}
+
+.division .clasificacion-table tr.playoff {
+    background-color: greenyellow !important;
+}
+
+.division .clasificacion-table tr.descenso {
+    background-color: lightcoral !important;
+}
+
+.division .cruzada-table {
+    grid-area: cruzada;
+    height: max-content;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: max-content;
+}
+
+.division .cruzada-table td {
+    border: 1px solid black;
+    text-align: center;
+    width: 50px;
+    padding: .2rem;
+}
+
+.division .cruzada-table .equipo-celda {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.division .cruzada-table .mismo-equipo {
+    background-color: gray;
+}
+
+.division .cruzada-table tbody > tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.division .cruzada-table tbody > tr:nth-child(odd) {
+    background-color: white;
 }

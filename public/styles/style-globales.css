@@ -20,17 +20,21 @@ aside {
     border: 1px solid black;
     background-color: white;
     width: 300px;
-    flex: 0 1 auto;
+    flex: 0 1 300px;
     padding: 1rem;
     display: flex;
     gap: .6rem;
     flex-direction: column;
 }
 
-aside > * {
+aside > section {
     display: flex;
     flex-direction: column;
     gap: .4rem;
+}
+
+aside hr:last-of-type {
+    margin-top: auto;
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -39,5 +43,6 @@ aside > * {
     flex: 1 1 auto;
     border: 1px solid black;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
+    overflow: auto;
 }

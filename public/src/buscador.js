@@ -1,5 +1,7 @@
 import generarEquipo from "../components/equipo.js"
 import tablaDivision from "../components/tablaDivision.js"
+import infoDivision from "../components/infoDivision.js"
+import tablaCruzada from "../components/tablaCruzada.js"
 
 export default class Buscador {
     static async buscarClasificacion(temporada, division) {
@@ -10,6 +12,8 @@ export default class Buscador {
 
             let clasificacionFetch
             let divisionFetch
+            let resultadosFetch
+            let equiposFetch
         
             await fetch(`/api/v1/clasificacion/${temporada}/${division}`)
                 .then(res => res.json())
@@ -21,13 +25,27 @@ export default class Buscador {
                 .then(data => divisionFetch = data)
                 .catch(err => console.error(err))
 
+            await fetch(`/api/v1/resultado/${temporada}/${division}`)
+                .then(res => res.json())
+                .then(data => resultadosFetch = data)
+
+            await fetch(`/api/v1/equipo/${temporada}`)
+                .then(res => res.json())
+                .then(data => equiposFetch = data)
+
+            equiposFetch = equiposFetch.filter(e => e.competiciones.includes(division))
+
             const data = {
                 division: divisionFetch,
-                clasificacion: clasificacionFetch
+                clasificacion: clasificacionFetch,
+                resultados: resultadosFetch,
+                equipos: equiposFetch
             }
 
             contenidoPrincipal.className = "division"
+            contenidoPrincipal.innerHTML += infoDivision(data)
             contenidoPrincipal.innerHTML += tablaDivision(data)
+            contenidoPrincipal.innerHTML += tablaCruzada(data)
 
             const equipos = contenidoPrincipal.querySelectorAll(".division > table > tbody > tr > td:nth-child(2)")
 
@@ -36,6 +54,8 @@ export default class Buscador {
                     Buscador.buscarEquipo(e.dataset.temporada, e.dataset.division, e.dataset.equipo)
                 })
             })
+
+            // GENERAR TABLA CRUZADA
         }
     }
 

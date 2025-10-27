@@ -1,0 +1,136 @@
+[
+    {
+        "padre": "Primera División",
+        "nombre": "Primera División",
+        "temporada": "25-26",
+        "nivel": 1,
+        "cobertura": "nacional",
+        "temporadas": 94,
+        "equipos": 20,
+        "cambiosCategoria": {
+            "descenso": {
+                "destino": "Segunda División",
+                "huecos": 3
+            }
+        },
+        "puntaje": {
+            "victoria": 3,
+            "empate": 1,
+            "derrota": 0
+        },
+        "urlLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/LaLiga_EA_Sports_2023_Horizontal_Logo.svg/2560px-LaLiga_EA_Sports_2023_Horizontal_Logo.svg.png",
+        "rondas": [
+            "1ª Jornada",
+            "2ª Jornada",
+            "3ª Jornada",
+            "4ª Jornada",
+            "5ª Jornada",
+            "6ª Jornada",
+            "7ª Jornada",
+            "8ª Jornada",
+            "9ª Jornada",
+            "10ª Jornada",
+            "11ª Jornada",
+            "12ª Jornada",
+            "13ª Jornada",
+            "14ª Jornada",
+            "15ª Jornada",
+            "16ª Jornada",
+            "17ª Jornada",
+            "18ª Jornada",
+            "19ª Jornada",
+            "20ª Jornada",
+            "21ª Jornada",
+            "22ª Jornada",
+            "23ª Jornada",
+            "24ª Jornada",
+            "25ª Jornada",
+            "26ª Jornada",
+            "27ª Jornada",
+            "28ª Jornada",
+            "29ª Jornada",
+            "30ª Jornada",
+            "31ª Jornada",
+            "32ª Jornada",
+            "33ª Jornada",
+            "34ª Jornada",
+            "35ª Jornada",
+            "36ª Jornada",
+            "37ª Jornada",
+            "38ª Jornada"
+        ]
+    },
+    {
+        "padre": "Segunda División",
+        "nombre": "Segunda División",
+        "temporada": "25-26",
+        "nivel": 2,
+        "cobertura": "nacional",
+        "temporadas": 96,
+        "equipos": 22,
+        "cambiosCategoria": {
+            "ascenso": {
+                "destino": "Primera División",
+                "huecos": 2
+            },
+            "playoff": {
+                "destino": "Primera División",
+                "huecos": 4
+            },
+            "descenso": {
+                "destino": "Primera RFEF",
+                "huecos": 4
+            }
+        },
+        "puntaje": {
+            "victoria": 3,
+            "empate": 1,
+            "derrota": 0
+        },
+        "urlLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/LaLiga_Hypermotion_2023_Horizontal_Logo.svg/1280px-LaLiga_Hypermotion_2023_Horizontal_Logo.svg.png",
+        "rondas": [
+            "1ª Jornada",
+            "2ª Jornada",
+            "3ª Jornada",
+            "4ª Jornada",
+            "5ª Jornada",
+            "6ª Jornada",
+            "7ª Jornada",
+            "8ª Jornada",
+            "9ª Jornada",
+            "10ª Jornada",
+            "11ª Jornada",
+            "12ª Jornada",
+            "13ª Jornada",
+            "14ª Jornada",
+            "15ª Jornada",
+            "16ª Jornada",
+            "17ª Jornada",
+            "18ª Jornada",
+            "19ª Jornada",
+            "20ª Jornada",
+            "21ª Jornada",
+            "22ª Jornada",
+            "23ª Jornada",
+            "24ª Jornada",
+            "25ª Jornada",
+            "26ª Jornada",
+            "27ª Jornada",
+            "28ª Jornada",
+            "29ª Jornada",
+            "30ª Jornada",
+            "31ª Jornada",
+            "32ª Jornada",
+            "33ª Jornada",
+            "34ª Jornada",
+            "35ª Jornada",
+            "36ª Jornada",
+            "37ª Jornada",
+            "38ª Jornada",
+            "39ª Jornada",
+            "40ª Jornada",
+            "41ª Jornada",
+            "42ª Jornada"
+        ]
+    }
+]

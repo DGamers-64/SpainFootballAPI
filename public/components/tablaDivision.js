@@ -1,10 +1,13 @@
 export default function tablaDivision(data) {
+    let cambios = data.division.cambiosCategoria
+    const total = data.division.equipos
+
+    const ascensoMax = cambios.ascenso?.huecos || 0;
+    const playoffMax = (cambios.playoff?.huecos || 0) + ascensoMax;
+    const descensoMin = total - (cambios.descenso?.huecos || 0) + 1;
+
     let elemento = `
-    <div id="info">
-        <img src="${data.division.urlLogo}">
-        <h2>${data.division.nombre}</h2>
-    </div>
-    <table>
+    <table class="clasificacion-table">
         <thead>
             <tr>
                 <th>Pos</th>
@@ -21,9 +24,16 @@ export default function tablaDivision(data) {
         </thead>
         <tbody>`
 
-    data.clasificacion.forEach(e => {
+    data.clasificacion.forEach((e, i) => {
+        let clase = ""
+        const pos = i+1
+
+        if (pos <= ascensoMax) clase = 'class="ascenso"';
+        else if (pos <= playoffMax && (cambios.playoff?.huecos || 0) > 0) clase = 'class="playoff"';
+        else if (pos >= descensoMin) clase = 'class="descenso"';
+
         elemento += `
-        <tr>
+        <tr ${clase}>
             <td class="td-30">${e.posicion}</td>
             <td data-temporada="${data.division.temporada}" data-division="${data.division.nombre}" data-equipo="${e.nombre}"><div class="td-flex"><img src="${e.urlEscudo}">${e.nombre}</div></td>
             <td class="td-30">${e.pts}</td>

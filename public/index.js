@@ -1,9 +1,9 @@
 import Buscador from "./src/buscador.js"
 import PreparacionAside from "./src/preparacionAside.js"
 
-let contenidoPrincipal
 
 document.addEventListener("DOMContentLoaded", async () => {
+    const contenidoPrincipal = document.getElementById("contenido")
     const botonClasificacion = document.querySelector("#clasificacion button")
     const botonEquipos = document.querySelector("#equipos button")
     
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     botonClasificacion.addEventListener("click", () => {
         const clasificacionSelectTemporada = document.querySelector("#clasificacion .temporada-select").value
         const clasificacionSelectDivision = document.querySelector("#clasificacion .division-select").value
+        contenidoPrincipal.innerHTML = ""
         Buscador.buscarClasificacion(clasificacionSelectTemporada, clasificacionSelectDivision)
     })
     
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const equiposSelectTemporada = document.querySelector("#equipos .temporada-select").value
         const equiposSelectDivision = document.querySelector("#equipos .division-select").value
         const equiposSelectEquipo = document.querySelector("#equipos .equipo-select").value
+        contenidoPrincipal.innerHTML = ""
         Buscador.buscarEquipo(equiposSelectTemporada, equiposSelectDivision, equiposSelectEquipo)
     })
 })
