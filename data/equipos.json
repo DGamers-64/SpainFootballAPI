@@ -97,7 +97,22 @@
         "competiciones": [
             "Primera División",
             "Copa del Rey"
-        ]
+        ],
+        "estadio": "Estadio Municipal de Balaídos",
+        "estadioCoords": [42.211861, -8.740328],
+        "titulos": {
+            "Intertoto": 1,
+            "Segunda División": 3
+        },
+        "temporadas": {
+            "25-26": {
+                "competiciones": [
+                    "Primera División",
+                    "Copa del Rey",
+                    "Europa League"
+                ]
+            }
+        }
     },
     {
         "nombre": "R. C. D. Espanyol",

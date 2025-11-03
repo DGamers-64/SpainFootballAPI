@@ -25,8 +25,11 @@
     border: 1px solid black;
 }
 
-.division .clasificacion-table {
+.division #clasificacion-div {
     grid-area: clasificacion;
+}
+
+.division .clasificacion-table {
     height: max-content;
     border: 1px solid black;
     border-collapse: collapse;
@@ -77,15 +80,29 @@
     width: 30px;
 }
 
-.division .clasificacion-table tr.ascenso {
+.division .champions {
+    background-color: darkblue !important;
+    color: white;
+}
+
+.division .europa {
+    background-color: orange !important;
+}
+
+.division .conference {
+    background-color: darkgreen !important;
+    color: white;
+}
+
+.division .ascenso {
     background-color: green !important;
 }
 
-.division .clasificacion-table tr.playoff {
+.division .playoff {
     background-color: greenyellow !important;
 }
 
-.division .clasificacion-table tr.descenso {
+.division .descenso {
     background-color: lightcoral !important;
 }
 
@@ -120,4 +137,15 @@
 
 .division .cruzada-table tbody > tr:nth-child(odd) {
     background-color: white;
+}
+
+.division #leyenda {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.division .leyenda-cuadrado {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
 }

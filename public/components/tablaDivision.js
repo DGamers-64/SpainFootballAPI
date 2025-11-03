@@ -1,12 +1,8 @@
 export default function tablaDivision(data) {
     let cambios = data.division.cambiosCategoria
-    const total = data.division.equipos
-
-    const ascensoMax = cambios.ascenso?.huecos || 0;
-    const playoffMax = (cambios.playoff?.huecos || 0) + ascensoMax;
-    const descensoMin = total - (cambios.descenso?.huecos || 0) + 1;
 
     let elemento = `
+    <div id="clasificacion-div">
     <table class="clasificacion-table">
         <thead>
             <tr>
@@ -28,9 +24,9 @@ export default function tablaDivision(data) {
         let clase = ""
         const pos = i+1
 
-        if (pos <= ascensoMax) clase = 'class="ascenso"';
-        else if (pos <= playoffMax && (cambios.playoff?.huecos || 0) > 0) clase = 'class="playoff"';
-        else if (pos >= descensoMin) clase = 'class="descenso"';
+        Object.entries(cambios).forEach(([k, v]) => {
+            if (v.huecos.includes(pos)) clase = `class="${k}"`
+        })
 
         elemento += `
         <tr ${clase}>
@@ -51,7 +47,18 @@ export default function tablaDivision(data) {
     elemento += `
         </tbody>     
     </table>
-    `
+    <ul id="leyenda">`
+
+    Object.entries(cambios).forEach(([k, v]) => {
+        if (!["champions", "europa", "conference"].includes(k)) {
+            elemento += `<li><span class="leyenda-cuadrado ${k}"></span> ${k.charAt(0).toUpperCase() + k.substring(1)} a ${v.destino}</li>`
+        } else {
+            elemento += `<li><span class="leyenda-cuadrado ${k}"></span> ${v.destino}</li>`
+        }
+    })
+
+    elemento += `</ul>
+    </div>`
 
     return elemento
 }

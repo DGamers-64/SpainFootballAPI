@@ -66,14 +66,37 @@ export default class Buscador {
             contenidoPrincipal.innerHTML = ""
 
             let equipoFetch
+            let divisionFetch
+
+            await fetch(`/api/v1/division`)
+                .then(res => res.json())
+                .then(data => divisionFetch = data)
+                .catch(err => console.error(err))
         
             await fetch(`/api/v1/equipo/${temporada}/${equipo}`)
                 .then(res => res.json())
                 .then(data => equipoFetch = data)
                 .catch(err => console.error(err))
 
+            equipoFetch.todasDivisiones = divisionFetch
+
             contenidoPrincipal.className = "equipo"
             contenidoPrincipal.innerHTML += generarEquipo(equipoFetch)
+
+            const lat = equipoFetch.estadioCoords[0]
+            const lng = equipoFetch.estadioCoords[1]
+
+            const map = L.map('mapa', {
+                zoom: 15,
+                center: [lat, lng]
+            });
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+            
+            L.marker([lat, lng])
+                .addTo(map)
+                .bindPopup(equipoFetch.estadio)
+                .openPopup()
 
             const competiciones = contenidoPrincipal.querySelectorAll(".equipo > #competiciones > table > tbody > tr > td")
 

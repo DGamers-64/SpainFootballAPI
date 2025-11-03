@@ -1,0 +1,96 @@
+[
+    {
+        "padre": "Primera División",
+        "nombre": "Primera División",
+        "urlTrofeo": "https://www.el-area.com/espanya/Imagenes/copa-primera_02.png",
+        "temporada": "25-26",
+        "nivel": 1,
+        "cobertura": "nacional",
+        "temporadas": 94,
+        "equipos": 20,
+        "cambiosCategoria": {
+            "champions": {
+                "destino": "Champions League",
+                "huecos": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            },
+            "europa": {
+                "destino": "Europa League",
+                "huecos": [
+                    6,
+                    7
+                ]
+            },
+            "conference": {
+                "destino": "Conference League",
+                "huecos": [
+                    8
+                ]
+            },
+            "descenso": {
+                "destino": "Segunda División",
+                "huecos": [
+                    18,
+                    19,
+                    20
+                ]
+            }
+        },
+        "puntaje": {
+            "victoria": 3,
+            "empate": 1,
+            "derrota": 0
+        },
+        "urlLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/LaLiga_EA_Sports_2023_Horizontal_Logo.svg/2560px-LaLiga_EA_Sports_2023_Horizontal_Logo.svg.png",
+        "rondas": 38
+    },
+    {
+        "padre": "Segunda División",
+        "nombre": "Segunda División",
+        "urlTrofeo": "https://www.el-area.com/espanya/Imagenes/copa-segunda.png",
+        "temporada": "25-26",
+        "nivel": 2,
+        "cobertura": "nacional",
+        "temporadas": 96,
+        "equipos": 22,
+        "cambiosCategoria": {
+            "ascenso": {
+                "destino": "Primera División",
+                "huecos": [
+                    1,
+                    2
+                ]
+            },
+            "playoff": {
+                "destino": "Primera División",
+                "huecos": [
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            },
+            "descenso": {
+                "destino": "Primera RFEF",
+                "huecos": [
+                    19,
+                    20,
+                    21,
+                    22
+                ]
+            }
+        },
+        "puntaje": {
+            "victoria": 3,
+            "empate": 1,
+            "derrota": 0
+        },
+        "urlLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/LaLiga_Hypermotion_2023_Horizontal_Logo.svg/1280px-LaLiga_Hypermotion_2023_Horizontal_Logo.svg.png",
+        "rondas": 42
+    }
+]

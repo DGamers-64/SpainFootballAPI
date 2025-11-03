@@ -1,11 +1,11 @@
 .equipo {
     display: grid;
     gap: 1rem;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
-    "escudo info"
-    "competiciones competiciones";
+    "escudo info info"
+    "competiciones competiciones estadio";
 }
 
 .equipo #escudo {
@@ -37,6 +37,7 @@
     border: 1px solid black;
     border-collapse: collapse;
     width: max-content;
+    width: 100%;
 }
 
 .equipo #competiciones td {
@@ -58,4 +59,33 @@
 
 .equipo tbody > tr:nth-child(odd) {
     background-color: white;
+}
+
+.equipo #estadio {
+    grid-area: estadio;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.equipo #estadio #mapa {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.equipo #info #trofeos {
+    display: flex;
+}
+
+.equipo #info #trofeos .trofeo {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipo #info #trofeos .trofeo img {
+    width: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
 }

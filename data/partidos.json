@@ -1,0 +1,51 @@
+[
+    {
+        "local": "Real Sociedad",
+        "visitante": "Sevilla C. F.",
+        "competicion": "Primera División",
+        "temporada": 2026,
+        "ronda": 10,
+        "goles_local": [
+            {
+                "minuto": "19",
+                "jugador": "Mikel Oyarzabal",
+                "observaciones": "Penalti"
+            },
+            {
+                "minuto": "36",
+                "jugador": "Mikel Oyarzabal"
+            }
+        ],
+        "goles_visitante": [
+            {
+                "minuto": "30",
+                "jugador": "Nemanja Gudelj",
+                "asistencia": "Gabriel Suazo"
+            }
+        ],
+        "tarjetas_amarillas_local": [
+            {
+                "minuto": "90+3",
+                "jugador": "Mikel Oyarzabal",
+                "motivo": "Invasión"
+            }
+        ],
+        "tarjetas_amarillas_visitante": [
+            {
+                "minuto": "34",
+                "jugador": "Lucien Agoumé",
+                "motivo": "Falta"
+            },
+            {
+                "minuto": "50",
+                "jugador": "Djibril Sow",
+                "motivo": "Falta"
+            },
+            {
+                "minuto": "57",
+                "jugador": "Carmona",
+                "motivo": "Falta"
+            }
+        ]
+    }
+]
