@@ -1,0 +1,1 @@
+De momento sólo tendré en consideración las temporadas a partir de la 28-29, obviando así las temporadas previas que contienen la Copa de España y torneos regionales. Se incluirán en un futuro mientras y tanto sólo me centraré en incluir la 1ª y 2ª División.

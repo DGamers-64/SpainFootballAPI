@@ -1,0 +1,41 @@
+[
+    {
+        "nombre": "R. C. Celta de Vigo",
+        "abreviacion": "CEL",
+        "escudo": "/static/img/escudos/celta_vigo.png",
+        "estadio": {
+            "nombre": "Estadio Municipal de Balaídos",
+            "coords": [42.211861, -8.740328]
+        },
+        "titulos": {
+            "Intertoto": 1,
+            "Segunda División": 3
+        },
+        "temporadas": {
+            "28-29": {
+                "nombre": "Club Celta"
+            },
+            "29-30": {
+                "nombre": "Club Celta"
+            },
+            "30-31": {
+                "nombre": "Club Celta"
+            },
+            "31-32": {
+                "nombre": "Club Celta"
+            },
+            "32-33": {
+                "nombre": "Club Celta"
+            },
+            "33-34": {
+                "nombre": "Club Celta"
+            },
+            "34-35": {
+                "nombre": "Club Celta"
+            },
+            "35-36": {
+                "nombre": "Club Celta"
+            }
+        }
+    }
+]

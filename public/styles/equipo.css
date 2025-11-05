@@ -4,7 +4,7 @@
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
-    "escudo info info"
+    "escudo info estadio"
     "competiciones competiciones estadio";
 }
 
@@ -69,8 +69,7 @@
 }
 
 .equipo #estadio #mapa {
-    width: 600px;
-    height: 600px;
+    height: 100%;
     border: 1px solid black;
 }
 
