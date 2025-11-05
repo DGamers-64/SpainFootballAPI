@@ -16,7 +16,6 @@ export default function generarEquipo(data) {
             <img src="${tituloImg}" title="${k}" alt="${k}">
             <span>${e}</span>
         </div>`
-        
     })
 
     elemento += `</div>
@@ -37,7 +36,7 @@ export default function generarEquipo(data) {
     data.competiciones.forEach(e => {
         elemento += `
         <tr>
-            <td data-temporada="${data.temporada}" data-competicion="${e}">${e}</td>
+            <td class="divisiones-tabla" data-temporada="${data.temporada}" data-competicion="${e}">${e}</td>
         </tr>
         `
     })

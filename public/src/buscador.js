@@ -2,6 +2,7 @@ import generarEquipo from "../components/equipo.js"
 import tablaDivision from "../components/tablaDivision.js"
 import infoDivision from "../components/infoDivision.js"
 import tablaCruzada from "../components/tablaCruzada.js"
+import fetchCustom from "./fetch.js"
 
 export default class Buscador {
     static async buscarClasificacion(temporada, division) {
@@ -10,52 +11,30 @@ export default class Buscador {
         if (temporada != "---" && division != "---") {
             contenidoPrincipal.innerHTML = ""
 
-            let clasificacionFetch
-            let divisionFetch
-            let resultadosFetch
-            let equiposFetch
-        
-            await fetch(`/api/v1/clasificacion/${temporada}/${division}`)
-                .then(res => res.json())
-                .then(data => clasificacionFetch = data)
-                .catch(err => console.error(err))
-
-            await fetch(`/api/v1/division/${temporada}/${division}`)
-                .then(res => res.json())
-                .then(data => divisionFetch = data)
-                .catch(err => console.error(err))
-
-            await fetch(`/api/v1/resultado/${temporada}/${division}`)
-                .then(res => res.json())
-                .then(data => resultadosFetch = data)
-
-            await fetch(`/api/v1/equipo/${temporada}`)
-                .then(res => res.json())
-                .then(data => equiposFetch = data)
-
-            equiposFetch = equiposFetch.filter(e => e.competiciones.includes(division))
-
             const data = {
-                division: divisionFetch,
-                clasificacion: clasificacionFetch,
-                resultados: resultadosFetch,
-                equipos: equiposFetch
+                division: await fetchCustom(`/api/v1/division/${temporada}/${division}`),
+                clasificacion: await fetchCustom(`/api/v1/clasificacion/${temporada}/${division}`),
+                resultados: await fetchCustom(`/api/v1/resultado/${temporada}/${division}`),
+                equipos: await fetchCustom(`/api/v1/equipo/${temporada}`)
             }
+
+            data.equipos = data.equipos.filter(e => e.competiciones.includes(division))
 
             contenidoPrincipal.className = "division"
             contenidoPrincipal.innerHTML += infoDivision(data)
             contenidoPrincipal.innerHTML += tablaDivision(data)
             contenidoPrincipal.innerHTML += tablaCruzada(data)
 
-            const equipos = contenidoPrincipal.querySelectorAll(".division > table > tbody > tr > td:nth-child(2)")
+            document.getElementById("contenido").addEventListener("click", (e) => {
+                const td = e.target.closest("td.equipos-clasificacion");
+                if (!td) return;
 
-            equipos.forEach(e => {
-                e.addEventListener("click", () => {
-                    Buscador.buscarEquipo(e.dataset.temporada, e.dataset.division, e.dataset.equipo)
-                })
-            })
-
-            // GENERAR TABLA CRUZADA
+                Buscador.buscarEquipo(
+                    td.dataset.temporada,
+                    td.dataset.division,
+                    td.dataset.equipo
+                );
+            });
         }
     }
 
@@ -65,26 +44,14 @@ export default class Buscador {
         if (temporada != "---" && division != "---") {
             contenidoPrincipal.innerHTML = ""
 
-            let equipoFetch
-            let divisionFetch
-
-            await fetch(`/api/v1/division`)
-                .then(res => res.json())
-                .then(data => divisionFetch = data)
-                .catch(err => console.error(err))
-        
-            await fetch(`/api/v1/equipo/${temporada}/${equipo}`)
-                .then(res => res.json())
-                .then(data => equipoFetch = data)
-                .catch(err => console.error(err))
-
-            equipoFetch.todasDivisiones = divisionFetch
+            let data = await fetchCustom(`/api/v1/equipo/${temporada}/${equipo}`)
+            data.todasDivisiones = await fetchCustom(`/api/v1/division`)
 
             contenidoPrincipal.className = "equipo"
-            contenidoPrincipal.innerHTML += generarEquipo(equipoFetch)
+            contenidoPrincipal.innerHTML += generarEquipo(data)
 
-            const lat = equipoFetch.estadioCoords[0]
-            const lng = equipoFetch.estadioCoords[1]
+            const lat = data.estadioCoords[0]
+            const lng = data.estadioCoords[1]
 
             const map = L.map('mapa', {
                 zoom: 15,
@@ -95,16 +62,15 @@ export default class Buscador {
             
             L.marker([lat, lng])
                 .addTo(map)
-                .bindPopup(equipoFetch.estadio)
+                .bindPopup(data.estadio)
                 .openPopup()
 
-            const competiciones = contenidoPrincipal.querySelectorAll(".equipo > #competiciones > table > tbody > tr > td")
+            contenidoPrincipal.addEventListener("click", (e) => {
+                const td = e.target.closest("td.divisiones-tabla");
+                if (!td) return;
 
-            competiciones.forEach(e => {
-                e.addEventListener("click", () => {
-                    Buscador.buscarClasificacion(e.dataset.temporada, e.dataset.competicion)
-                })
-            })
+                Buscador.buscarClasificacion(td.dataset.temporada, td.dataset.competicion);
+            });
         }
     }
 }

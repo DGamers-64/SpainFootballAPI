@@ -31,7 +31,7 @@ export default function tablaDivision(data) {
         elemento += `
         <tr ${clase}>
             <td class="td-30">${e.posicion}</td>
-            <td data-temporada="${data.division.temporada}" data-division="${data.division.nombre}" data-equipo="${e.nombre}"><div class="td-flex"><img src="${e.urlEscudo}">${e.nombre}</div></td>
+            <td class="equipos-clasificacion" data-temporada="${data.division.temporada}" data-division="${data.division.nombre}" data-equipo="${e.nombre}"><div class="td-flex"><img src="${e.urlEscudo}">${e.nombre}</div></td>
             <td class="td-30">${e.pts}</td>
             <td class="td-30">${e.pj}</td>
             <td class="td-30">${e.pg}</td>
