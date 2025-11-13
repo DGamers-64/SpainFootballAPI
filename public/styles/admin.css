@@ -1,0 +1,12 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.admin #elegir-formulario {
+    height: min-content;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}

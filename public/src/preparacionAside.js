@@ -1,8 +1,8 @@
-import fetchCustom from "./fetch.js";
+import fetch2 from "./fetch2.js";
 
 export default class PreparacionAside {
     static async prepararClasificacion() {
-        const divisiones = await fetchCustom("/api/v1/division")
+        const divisiones = await fetch2.get("/api/v1/division")
         const select = document.querySelector("#clasificacion .division-select")
         divisiones.forEach(e => {
             select.innerHTML += `<option value="${e.nombre}">${e.nombre}</option>`
@@ -24,7 +24,8 @@ export default class PreparacionAside {
     }
     
     static async prepararEquipo() {
-        const divisiones = await fetchCustom("/api/v1/division")
+
+        const divisiones = await fetch2.get("/api/v1/division")
         const select = document.querySelector("#equipos .division-select")
         const selectTemporadas = document.querySelector("#equipos .temporada-select")
         const selectEquipos = document.querySelector("#equipos .equipo-select")
@@ -45,7 +46,7 @@ export default class PreparacionAside {
             })
 
             selectTemporadas.addEventListener("input", async () => {
-                const equipos = await fetchCustom("/api/v1/equipo")
+                const equipos = await fetch2.get("/api/v1/equipo")
                 const equiposFiltrados = equipos.filter(e => 
                     e.temporada == selectTemporadas.value && e.competiciones.includes(select.value)
                 )

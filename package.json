@@ -21,9 +21,15 @@
   "type": "module",
   "main": "api.js",
   "scripts": {
-    "test": "node --watch --env-file=.env api.js"
+    "start": "node --watch --env-file=.env api.js",
+    "live-client": "npx browser-sync start --proxy \"http://localhost:6123\" --files \"public/**/*\"",
+    "all": "concurrently \"node --run start\" \"node --run live-client\""
   },
   "dependencies": {
     "express": "5.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1"
   }
 }

@@ -2,7 +2,7 @@ import generarEquipo from "../components/equipo.js"
 import tablaDivision from "../components/tablaDivision.js"
 import infoDivision from "../components/infoDivision.js"
 import tablaCruzada from "../components/tablaCruzada.js"
-import fetchCustom from "./fetch.js"
+import fetch2 from "./fetch2.js"
 
 export default class Buscador {
     static async buscarClasificacion(temporada, division) {
@@ -12,10 +12,10 @@ export default class Buscador {
             contenidoPrincipal.innerHTML = ""
 
             const data = {
-                division: await fetchCustom(`/api/v1/division/${temporada}/${division}`),
-                clasificacion: await fetchCustom(`/api/v1/clasificacion/${temporada}/${division}`),
-                resultados: await fetchCustom(`/api/v1/resultado/${temporada}/${division}`),
-                equipos: await fetchCustom(`/api/v1/equipo/${temporada}`)
+                division: await fetch2.get(`/api/v1/division/${temporada}/${division}`),
+                clasificacion: await fetch2.get(`/api/v1/clasificacion/${temporada}/${division}`),
+                resultados: await fetch2.get(`/api/v1/resultado/${temporada}/${division}`),
+                equipos: await fetch2.get(`/api/v1/equipo/${temporada}`)
             }
 
             data.equipos = data.equipos.filter(e => e.competiciones.includes(division))
@@ -44,8 +44,8 @@ export default class Buscador {
         if (temporada != "---" && division != "---") {
             contenidoPrincipal.innerHTML = ""
 
-            let data = await fetchCustom(`/api/v1/equipo/${temporada}/${equipo}`)
-            data.todasDivisiones = await fetchCustom(`/api/v1/division`)
+            let data = await fetch2.get(`/api/v1/equipo/${temporada}/${equipo}`)
+            data.todasDivisiones = await fetch2.get(`/api/v1/division`)
 
             contenidoPrincipal.className = "equipo"
             contenidoPrincipal.innerHTML += generarEquipo(data)

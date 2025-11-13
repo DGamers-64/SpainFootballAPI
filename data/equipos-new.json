@@ -1,39 +1,54 @@
 [
     {
+        "id": "rc-celta-de-vigo",
         "nombre": "R. C. Celta de Vigo",
         "abreviacion": "CEL",
         "escudo": "/static/img/escudos/celta_vigo.png",
         "estadio": {
             "nombre": "Estadio Municipal de Balaídos",
-            "coords": [42.211861, -8.740328]
+            "coordenadas": [42.211861, -8.740328]
         },
-        "titulos": {
-            "Intertoto": 1,
-            "Segunda División": 3
-        },
+        "titulos": [
+            {
+                "competicion": "Intertoto",
+                "temporadas": [ 2001 ]
+            },
+            {
+                "competicion": "Segunda División",
+                "temporadas": [ 1992, 1982, 1936, 1935 ]
+            },
+            {
+                "competicion": "Segunda División B",
+                "temporadas": [ 1981 ]
+            },
+            {
+                "competicion": "Tercera División",
+                "temporadas": [ 1931 ]
+            }
+        ],
         "temporadas": {
-            "28-29": {
+            "1929": {
                 "nombre": "Club Celta"
             },
-            "29-30": {
+            "1930": {
                 "nombre": "Club Celta"
             },
-            "30-31": {
+            "1931": {
                 "nombre": "Club Celta"
             },
-            "31-32": {
+            "1932": {
                 "nombre": "Club Celta"
             },
-            "32-33": {
+            "1933": {
                 "nombre": "Club Celta"
             },
-            "33-34": {
+            "1934": {
                 "nombre": "Club Celta"
             },
-            "34-35": {
+            "1935": {
                 "nombre": "Club Celta"
             },
-            "35-36": {
+            "1936": {
                 "nombre": "Club Celta"
             }
         }
