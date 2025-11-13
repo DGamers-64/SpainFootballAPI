@@ -62,6 +62,8 @@
         #fecha-restante {
             text-align: center;
             grid-area: fecha;
+            display: flex;
+            flex-direction: column;
         }
 
         form {
@@ -83,16 +85,16 @@
         <div id="contenedores-info">
         </div>
         <hr>
-        <form action="/resultado" method="post">
-            <label>Equipo 1: </label><select name="equipo1">
+        <form action="/api/v1/resultado" method="post">
+            <label>Equipo 1: </label><input type="text" name="equipo1">
 
-            </select>
-            <label>Equipo 2: </label><select name="equipo2">
+            <!-- </select> -->
+            <label>Equipo 2: </label><input type="text" name="equipo2">
 
-            </select>
-            <label>Competición: </label><select name="division">
+            <!-- </select> -->
+            <label>Competición: </label><input type="text" name="division">
             
-            </select>
+            <!-- </select> -->
             <label>Goles equipo 1: </label><input name="goles1" type="number">
             <label>Goles equipo 2: </label><input name="goles2" type="number">
             <label>Fecha evento: </label><input name="fecha" type="datetime-local">

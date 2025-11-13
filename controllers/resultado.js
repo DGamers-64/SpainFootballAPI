@@ -30,7 +30,7 @@ export default class ResultadosController {
             temporada: "25-26",
             goles1,
             goles2,
-            fecha
+            fecha: fecha + "Z"
         }
 
         await ResultadosModel.nuevoResultado(resultado)

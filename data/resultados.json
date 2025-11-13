@@ -2108,5 +2108,35 @@
         "goles1": 0,
         "goles2": 5,
         "fecha": "2025-02-12T21:00Z"
+    },
+    {
+        "equipo1": "R. C. Celta de Vigo",
+        "equipo2": "Cádiz C. F.",
+        "tipo": "liga",
+        "division": "Primera División",
+        "temporada": "25-26",
+        "goles1": "3",
+        "goles2": "1",
+        "fecha": "2025-11-12T16:00Z"
+    },
+    {
+        "equipo1": "R. C. Celta de Vigo",
+        "equipo2": "Cádiz C. F.",
+        "tipo": "liga",
+        "division": "Primera División",
+        "temporada": "25-26",
+        "goles1": "1",
+        "goles2": "5",
+        "fecha": "2025-11-12T16:00Z"
+    },
+    {
+        "equipo1": "R. C. Celta de Vigo",
+        "equipo2": "Cádiz C. F.",
+        "tipo": "liga",
+        "division": "Segunda División",
+        "temporada": "25-26",
+        "goles1": "3",
+        "goles2": "3",
+        "fecha": "2025-10-31T22:03Z"
     }
 ]
