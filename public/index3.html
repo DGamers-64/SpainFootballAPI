@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src='https://cdn.jsdelivr.net/npm/temporal-polyfill@0.3.0/global.min.js'></script>
     <style>
         * {
             padding: 0;
@@ -19,7 +20,9 @@
         }
 
         .imagen {
-            width: 60px;
+            max-width: 80px;
+            max-height: 80px;
+            object-fit: contain;
         }
 
         #contenedores-info {
@@ -78,19 +81,6 @@
         </div>
         <hr>
         <div id="contenedores-info">
-            <div class="info">
-                <div class="sub-info" id="sub-info-1">
-                    <img src="" class="imagen" id="img-equipo1">
-                    <span class="nombres" id="nombre-equipo1"></span>
-                    <span class="goles" id="goles-equipo1"></span>
-                </div>
-                <div class="sub-info" id="sub-info-2">
-                    <img src="" class="imagen" id="img-equipo2">
-                    <span class="nombres" id="nombre-equipo2"></span>
-                    <span class="goles" id="goles-equipo2"></span>
-                </div>
-                <span id="fecha-restante"></span>
-            </div>
         </div>
         <hr>
         <form action="/resultado" method="post">
