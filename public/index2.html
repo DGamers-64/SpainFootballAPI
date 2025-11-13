@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+        #tabla-container {
+            display: none;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        th, td {
+            padding: .2rem;
+            text-align: center;
+        }
+
+        thead tr {
+            color: white;
+            background-color: black;
+        }
+
+        img {
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <input type="text">
+            <button>Buscar equipos</button>
+        </div>
+        <hr>
+        <div id="tabla-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Abrv.</th>
+                        <th>Escudo</th>
+                        <th>Nombre</th>
+                        <th>Nº Competiciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="index2.js"></script>
+</body>
+</html>

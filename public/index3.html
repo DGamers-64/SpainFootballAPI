@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+        .imagen {
+            width: 60px;
+        }
+
+        #contenedores-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .info {
+            border: 1px solid black;
+            padding: 1rem;
+            display: grid;
+            grid-template-areas: 
+            "sub-info-1 sub-info-2"
+            "fecha fecha";
+            width: min-content;
+            gap: 1rem;
+        }
+
+        .sub-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .goles {
+            font-size: 1.3em;
+        }
+
+        #sub-info-1 {
+            grid-area: sub-info-1;
+        }
+
+        #sub-info-2 {
+            grid-area: sub-info-2;
+        }
+
+        #fecha-restante {
+            text-align: center;
+            grid-area: fecha;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: min-content;
+            gap: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="buscador">
+            <input type="text" id="buscar-equipo1">
+            <input type="text" id="buscar-equipo2">
+            <button>Buscar resultado</button>
+        </div>
+        <hr>
+        <div id="contenedores-info">
+            <div class="info">
+                <div class="sub-info" id="sub-info-1">
+                    <img src="" class="imagen" id="img-equipo1">
+                    <span class="nombres" id="nombre-equipo1"></span>
+                    <span class="goles" id="goles-equipo1"></span>
+                </div>
+                <div class="sub-info" id="sub-info-2">
+                    <img src="" class="imagen" id="img-equipo2">
+                    <span class="nombres" id="nombre-equipo2"></span>
+                    <span class="goles" id="goles-equipo2"></span>
+                </div>
+                <span id="fecha-restante"></span>
+            </div>
+        </div>
+        <hr>
+        <form action="/resultado" method="post">
+            <label>Equipo 1: </label><select name="equipo1">
+
+            </select>
+            <label>Equipo 2: </label><select name="equipo2">
+
+            </select>
+            <label>Competición: </label><select name="division">
+            
+            </select>
+            <label>Goles equipo 1: </label><input name="goles1" type="number">
+            <label>Goles equipo 2: </label><input name="goles2" type="number">
+            <label>Fecha evento: </label><input name="fecha" type="datetime-local">
+            <button>Añadir resultado</button>
+        </form>
+    </main>
+    <script src="index3.js"></script>
+</body>
+</html>
