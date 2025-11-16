@@ -10,3 +10,46 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid black;
 }
+
+.admin #formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin form {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    flex-direction: column;
+}
+
+.admin form h3 {
+    text-align: center;
+}
+
+.admin .form-block {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.admin button.form-small {
+    width: 30%;
+}
+
+.admin .titulo {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.admin .nombres {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding: 1rem;
+    border: 1px solid black;
+}

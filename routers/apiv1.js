@@ -12,6 +12,8 @@ apiv1Router.get("/division/:temporada/:division", DivisionesController.devolverD
 
 apiv1Router.get("/equipo", EquiposController.devolverTodosEquipos)
 
+apiv1Router.post("/equipo", EquiposController.insertarNuevoEquipo)
+
 apiv1Router.get("/equipo/:temporada", EquiposController.devolverEquiposTemporada)
 
 apiv1Router.get("/equipo/:temporada/:equipo", EquiposController.devolverEquipo)

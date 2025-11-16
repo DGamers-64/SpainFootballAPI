@@ -1,0 +1,437 @@
+[
+    {
+        "nombre": "Athletic Club",
+        "abreviacion": "ATH",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Logo_Athletic_Club_Bilbao.svg/1792px-Logo_Athletic_Club_Bilbao.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Atlético de Madrid",
+        "abreviacion": "ATL",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/ar/c/c1/Atletico_Madrid_logo.svg",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "C. A. Osasuna",
+        "abreviacion": "OSA",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/25/Logo_CA_Osasuna_2024.svg/500px-Logo_CA_Osasuna_2024.svg.png?20240801113501",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Deportivo Alavés",
+        "abreviacion": "ALA",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/thumb/f/f8/Deportivo_Alaves_logo_%282020%29.svg/1200px-Deportivo_Alaves_logo_%282020%29.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Elche C. F.",
+        "abreviacion": "ELC",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/thumb/a/a7/Elche_CF_logo.svg/205px-Elche_CF_logo.svg.png?20180126115708",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "F. C. Barcelona",
+        "abreviacion": "FCB",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1183px-FC_Barcelona_%28crest%29.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Getafe C. F.",
+        "abreviacion": "GCF",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Getafe_logo.svg/1148px-Getafe_logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Girona F. C.",
+        "abreviacion": "GIR",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Girona_FC_Logo.svg/1200px-Girona_FC_Logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Levante U. D.",
+        "abreviacion": "LEV",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/4/48/Levante_Uni%C3%B3n_Deportiva%2C_S.A.D._logo.png?20241007102522",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "R. C. Celta de Vigo",
+        "abreviacion": "CEL",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/RC_Celta_de_Vigo_logo.svg/676px-RC_Celta_de_Vigo_logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ],
+        "estadio": "Estadio Municipal de Balaídos",
+        "estadioCoords": [42.211861, -8.740328],
+        "titulos": {
+            "Intertoto": 1,
+            "Segunda División": 3
+        },
+        "temporadas": {
+            "25-26": {
+                "competiciones": [
+                    "Primera División",
+                    "Copa del Rey",
+                    "Europa League"
+                ]
+            }
+        }
+    },
+    {
+        "nombre": "R. C. D. Espanyol",
+        "abreviacion": "ESP",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/9/92/RCD_Espanyol_crest.svg",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "R. C. D. Mallorca",
+        "abreviacion": "MAL",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/de/thumb/e/e0/Rcd_mallorca.svg/776px-Rcd_mallorca.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Rayo Vallecano",
+        "abreviacion": "RAY",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/c/cc/Rayo_Vallecano_logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Real Betis Balompié",
+        "abreviacion": "BET",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/13/Real_betis_logo.svg/2493px-Real_betis_logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Real Madrid C. F.",
+        "abreviacion": "RMA",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Real Oviedo",
+        "abreviacion": "OVI",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Real_Oviedo_logo.svg/827px-Real_Oviedo_logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Real Sociedad",
+        "abreviacion": "RSO",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Real_Sociedad_logo.svg/1044px-Real_Sociedad_logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Sevilla F. C.",
+        "abreviacion": "SEV",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/5/5c/Sevilla_F%C3%BAtbol_Club_logo.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Valencia C. F.",
+        "abreviacion": "VAL",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/sco/thumb/c/ce/Valenciacf.svg/1623px-Valenciacf.svg.png",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Villarreal C. F.",
+        "abreviacion": "VIL",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/70/Villarreal_CF_logo.svg/250px-Villarreal_CF_logo.svg.png?20140228052353",
+        "competiciones": [
+            "Primera División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "A. D. Ceuta F. C.",
+        "abreviacion": "CEU",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/d/d3/AD_Ceuta_FC.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Albacete Balompié",
+        "abreviacion": "ALB",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/3/37/Albacete_balompie.svg",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Burgos C. F.",
+        "abreviacion": "BUR",
+        "temporada": "25-26",
+        "urlEscudo": "https://statics-maker.llt-services.com/bur/images/2022/11/28/watermarked/409ec8a7-6fb4-4412-bd83-cf1ee1525207-753.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "C. D. Castellón",
+        "abreviacion": "CAS",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Logo_of_CD_Castell%C3%B3n.svg/936px-Logo_of_CD_Castell%C3%B3n.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "C. D. Leganés",
+        "abreviacion": "LEG",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Club_Deportivo_Legan%C3%A9s_logo.svg/1200px-Club_Deportivo_Legan%C3%A9s_logo.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "C. D. Mirandés",
+        "abreviacion": "MIR",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/thumb/b/b8/CD_Mirand%C3%A9s_logo.svg/1695px-CD_Mirand%C3%A9s_logo.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Cultural y Deportiva Leonesa",
+        "abreviacion": "CUL",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/fr/thumb/a/a7/Logo_Cultural_y_Deportiva_Leonesa_-_2018.svg/langfr-250px-Logo_Cultural_y_Deportiva_Leonesa_-_2018.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Cádiz C. F.",
+        "abreviacion": "CAD",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/it/2/2a/Cadizcf.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Córdoba C. F.",
+        "abreviacion": "COR",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/it/b/b1/Cordoba_CF.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Deportivo de La Coruña",
+        "abreviacion": "DEP",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/it/1/12/Rc_deportivo_de_la_coruna.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "F. C. Andorra",
+        "abreviacion": "AND",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/commons/b/bf/FC_Andorra_logo_team.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Granada C. F.",
+        "abreviacion": "GRA",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Escudo_Granada_club_de_f%C3%BAtbol.png/250px-Escudo_Granada_club_de_f%C3%BAtbol.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Málaga C. F.",
+        "abreviacion": "MAL",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/it/8/80/Malaga_CF.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Racing de Santander",
+        "abreviacion": "RAC",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/3/30/Real_racing_club_santander_180px.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Real Sociedad 'B'",
+        "abreviacion": "RSO",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/ca/6/68/Real_Sociedad_de_Futbol_logo.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Real Valladolid C. F.",
+        "abreviacion": "RVA",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/6/62/Real_Valladolid_Club_de_F%C3%BAtbol_logo.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Real Zaragoza",
+        "abreviacion": "ZAR",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/8/8f/Real_Zaragoza_svg_logo.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "S. D. Eibar",
+        "abreviacion": "EIB",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/3/3b/SD_Eibar_logo_2016.svg",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "S. D. Huesca",
+        "abreviacion": "HUE",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/an/thumb/8/8a/Logo_of_SD_Huesca.svg/1040px-Logo_of_SD_Huesca.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "Sporting de Gijón",
+        "abreviacion": "SPO",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/sco/thumb/4/48/Real_Sporting_de_Gijon.svg/1198px-Real_Sporting_de_Gijon.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "U. D. Almería",
+        "abreviacion": "ALM",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/UD_Almeria_logo.svg/1514px-UD_Almeria_logo.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    },
+    {
+        "nombre": "U. D. Las Palmas",
+        "abreviacion": "UDP",
+        "temporada": "25-26",
+        "urlEscudo": "https://upload.wikimedia.org/wikipedia/sco/thumb/2/20/UD_Las_Palmas_logo.svg/1188px-UD_Las_Palmas_logo.svg.png",
+        "competiciones": [
+            "Segunda División",
+            "Copa del Rey"
+        ]
+    }
+]

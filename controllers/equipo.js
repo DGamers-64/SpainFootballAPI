@@ -19,4 +19,10 @@ export default class EquiposController {
 
         res.send(equiposBD.filter(e => e.nombre == equipo && e.temporada == temporada)[0])
     }
+
+    static async insertarNuevoEquipo(req, res) {
+        const data = req.body
+        const equipo = await EquiposModel.insertarEquipo(data)
+        res.send(equipo)
+    }
 }
